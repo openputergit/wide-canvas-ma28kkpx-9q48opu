@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Your Academic Resource Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            min-height: 100vh;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <!-- Navigation -->
+    <nav class="glass rounded-xl p-4 mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">StudyHub</h1>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-white hover:text-gray-200"><i class="bi bi-search"></i></a>
+                <a href="#" class="text-white hover:text-gray-200"><i class="bi bi-cart3"></i></a>
+                <a href="#" class="text-white hover:text-gray-200"><i class="bi bi-person-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto">
+        <!-- Categories -->
+        <div class="glass rounded-xl p-6 mb-8">
+            <h2 class="text-xl font-semibold text-white mb-4">Browse by Subject</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button class="glass p-4 rounded-lg text-white hover:bg-white/30 transition">Mathematics</button>
+                <button class="glass p-4 rounded-lg text-white hover:bg-white/30 transition">Physics</button>
+                <button class="glass p-4 rounded-lg text-white hover:bg-white/30 transition">Chemistry</button>
+                <button class="glass p-4 rounded-lg text-white hover:bg-white/30 transition">Computer Science</button>
+            </div>
+        </div>
+
+        <!-- Featured Notes -->
+        <div class="glass rounded-xl p-6 mb-8">
+            <h2 class="text-xl font-semibold text-white mb-4">Featured Notes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-4 rounded-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&auto=format" class="w-full h-48 object-cover rounded-lg mb-4" alt="Notes">
+                    <h3 class="text-white font-semibold">Calculus Complete Guide</h3>
+                    <p class="text-gray-200 text-sm mb-2">Comprehensive study material</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-white font-bold">$19.99</span>
+                        <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="glass p-4 rounded-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1501290836517-b22a21c522a4?w=500&auto=format" class="w-full h-48 object-cover rounded-lg mb-4" alt="Notes">
+                    <h3 class="text-white font-semibold">Physics Formula Handbook</h3>
+                    <p class="text-gray-200 text-sm mb-2">Quick reference guide</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-white font-bold">$14.99</span>
+                        <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="glass p-4 rounded-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=500&auto=format" class="w-full h-48 object-cover rounded-lg mb-4" alt="Notes">
+                    <h3 class="text-white font-semibold">Programming Basics</h3>
+                    <p class="text-gray-200 text-sm mb-2">Beginner to advanced concepts</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-white font-bold">$24.99</span>
+                        <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Papers -->
+        <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-semibold text-white mb-4">Previous Year Question Papers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-4 rounded-lg flex items-center justify-between">
+                    <div>
+                        <h3 class="text-white font-semibold">Mathematics 2023</h3>
+                        <p class="text-gray-200 text-sm">Spring Semester</p>
+                    </div>
+                    <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition">
+                        Download <i class="bi bi-download ml-2"></i>
+                    </button>
+                </div>
+
+                <div class="glass p-4 rounded-lg flex items-center justify-between">
+                    <div>
+                        <h3 class="text-white font-semibold">Physics 2023</h3>
+                        <p class="text-gray-200 text-sm">Fall Semester</p>
+                    </div>
+                    <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition">
+                        Download <i class="bi bi-download ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('button');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                if(this.textContent.includes('Add to Cart')) {
+                    alert('Item added to cart successfully!');
+                } else if(this.textContent.includes('Download')) {
+                    alert('Download starting...');
+                }
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
